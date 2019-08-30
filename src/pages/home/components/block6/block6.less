@@ -1,0 +1,192 @@
+.block6-wrap {
+    // height: 100%;
+    // overflow: auto;
+
+    & .block6-item {
+        margin: 0 auto;
+    }
+
+    & .block6-info {
+        height: 500px;
+        padding: 110px 0;
+        background: url(../../../../assets/6.png) center no-repeat;
+        box-sizing: border-box;
+    }
+
+    & .block6-info-inner {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    & .com-status {
+        position: relative;
+        margin-bottom: 10px;
+        font-size: 32px;
+        color: #fff;
+        text-align: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 450px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: translate(0,-50%);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 450px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: translate(0,-50%);
+        }
+    }
+
+    & .com-timeline {
+        position: relative;
+        height: 54px;
+        margin: 0 auto;
+
+        & .com-tl-arrow {
+            position: relative;
+            width: 750px;
+            margin: 0 auto;
+
+            > span {
+                position: absolute;
+                top: 0;
+                width: 29px;
+                height: 54px;
+                cursor: pointer;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                &:nth-child(1) {
+                    left: 0;
+                    background-image: url(../../../../assets/6-1.png);
+                }
+
+                &:nth-child(2) {
+                    right: 0;
+                    background-image: url(../../../../assets/6-2.png);
+                }
+            }
+        }
+
+        & .com-tl-process {
+            width: 650px;
+            height: 54px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 54px;
+            color: #fff;
+            font-size: 12px;
+            overflow: hidden;
+            
+            > .com-tlp-inner {
+                display: flex;
+                width: 9999px;
+                transition: all 0.8s ease-in-out;
+            }
+
+            & span {
+                display: block;
+                min-width: 130px;
+                cursor: pointer;
+
+                &.actived {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        & .com-tl-con {
+            width: 960px;
+            height: 139px;
+            margin: 0 auto;
+            padding: 70px 195px 0;
+            color: #2b3435;
+            text-align: left;
+            line-height: 22px;
+            font-size: 12px;
+            background: url(../../../../assets/6-3.png) center no-repeat;
+            box-sizing: border-box;
+
+            > div {
+                height: 44px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+
+    & .block6-brand {
+        padding: 50px 120px;
+
+        & .block6-brand-title {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            line-height: 190px;
+        }
+
+        & .block6-brand-list {
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+            padding: 10px 5px;
+            overflow: hidden;
+
+            > .block6-brand-inner {
+                display: flex;
+                width: 1800px;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+
+        & .block6-brand-item {
+            width: 340px;
+            height: 350px;
+            margin-right: 107px;
+            margin-bottom: 40px;
+            padding: 45px;
+            background-color: #f6f7f8;
+            box-sizing: border-box;
+            transition: all 1s;
+
+            > img {
+                display: block;
+                width: 83px;
+                margin: 0 auto 10px;
+            }
+
+            > h3 {
+                margin-bottom: 10px;
+                font-size: 22px;
+                color: #333;
+                text-align: center;
+            }
+
+            > span {
+                display: block;
+                font-size: 14px;
+                color: #666;
+                line-height: 20px;
+            }
+
+            &:hover {
+                box-shadow: 0 0 10px #666;
+            }
+        }
+    }
+}

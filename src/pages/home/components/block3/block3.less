@@ -1,0 +1,172 @@
+.block3-wrap {
+    position: relative;
+    height: 100%;
+
+    & .block3-item {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 200px 0;
+    }
+
+    & .block3-title {
+        margin-bottom: 40px!important;
+    }
+
+    & .block3-con {
+        position: relative;
+        width: 1185px;
+        height: 720px;
+        background: url(../../../../assets/3-1.png) center no-repeat;
+    }
+
+    & .block3-con-card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 924px;
+        height: 608px;
+        margin: auto;
+        z-index: 1;
+        background: url(../../../../assets/3-5.png) center no-repeat;
+        background-size: cover;
+        transform: translate(-50%,-50%);
+    }
+
+    & .block3-con-icon {
+        position: absolute;
+        width: 89px;
+        height: 89px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    & .block3-con-icon1 {
+        top: 675px;
+        left: 888px;
+        background-image: url(../../../../assets/3-2.png);
+    }
+
+    & .block3-con-icon2 {
+        top: 50px;
+        left: -28px;
+        background-image: url(../../../../assets/3-3.png);
+    }
+
+    & .block3-con-icon3 {
+        top: -15px;
+        left: 410px;
+        background-image: url(../../../../assets/3-4.png);
+    }
+
+    & .block3-con-wrap {
+        position: relative;
+        left: -105px;
+        height: 720px;
+        transform: rotate(25deg);
+    }
+}
+
+.showAni {
+    & .block3-con {
+        // animation: runScale 2s ease-in-out 0.8s 1 backwards;
+    }
+
+    & .block3-con-wrap {
+        animation: showCir 3s linear 0.8 1s backwards;
+    }
+
+    & .block3-con-icon1 {
+        // animation: cir1 7s linear 2.8s infinite backwards;
+        animation: 
+        animX 10s cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate,
+        animY 10s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+    }
+
+    & .block3-con-icon2 {
+        // animation: cir1 7s linear 2.8s infinite alternate;
+        animation: 
+        animX 10s cubic-bezier(0.36, 0, 0.64, 1) -7.857s infinite alternate,
+        animY 10s cubic-bezier(0.36, 0, 0.64, 1) -2.857s infinite alternate;
+    }
+
+    & .block3-con-icon3 {
+        // animation: cir1 7s linear 2.8s infinite alternate;
+        animation: 
+        animX 10s cubic-bezier(0.36, 0, 0.64, 1) -10.714s infinite alternate,
+        animY 10s cubic-bezier(0.36, 0, 0.64, 1) -5.714s infinite alternate;
+    }
+}
+
+@keyframes runScale {
+    0% {
+        width: 200px;
+        height: 121;
+        margin: 100px 0 0 492px;
+        opacity: 0;
+        transform: scale(0.3) translate3d(0,0,-50px);
+    }
+    100% {
+        width: 1185px;
+        height: 720px;
+        margin: 0;
+        opacity: 1;
+        transform: scale(1) translate3d(0,0,0);
+    }
+}
+
+@keyframes runArround1 {
+    0% {
+        left: 410px;
+        top: -15px;
+        opacity: 0;
+    }
+    1% {
+        left: 410px;
+        top: -15px;
+        opacity: 1;
+    }
+    7% {
+        left: 220px;
+        top: -40px;
+    }
+    10% {
+        top: -13px;
+        left: 50px;
+    }
+    15% {
+        left: -28px;
+        top: 50px;
+    }
+    50% {
+        top: 675px;
+        left: 888px;
+    }
+    100% {
+        left: 410px;
+        top: -15px;
+    }
+}
+
+@keyframes animX{
+    0% {left: 0;}
+    100% {left: 1290px;}
+}
+@keyframes animY{
+    0% {top: 0px;}
+    100% {top: 560px;}
+}
+    
+
+@keyframes cir1 {
+    0% {
+        transform: rotateX(0) rotateY(0deg) rotateZ(10deg)
+    }
+    100% {
+        transform: rotateX(0) rotateY(-360deg) rotateZ(10deg)
+    }
+}
+
+@keyframes showCir {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

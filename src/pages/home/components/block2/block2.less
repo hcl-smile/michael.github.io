@@ -1,0 +1,135 @@
+.block2-wrap {
+    position: relative;
+    height: 100%;
+    background: url(../../../../assets/2.png) center no-repeat;
+    background-size: cover;
+
+    & .block2-item {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 200px 0;
+    }
+
+    & .block2-title {
+        margin-bottom: 75px;
+        padding: 0 185px;
+        color: #fff;
+
+        > span {
+            text-align: left!important;
+        }
+    }
+
+    & .block2-con {
+        position: relative;
+        width: 1166px;
+        height: 672px;
+        margin: 0 auto;
+        background: url(../../../../assets/2-1.png) center no-repeat;
+        background-size: cover;
+
+        & .line-1 {
+            position: absolute;
+            top: 103px;
+            left: 220px;
+            width: 713px;
+            height: 281px;
+            overflow: hidden;
+
+            > span {
+                display: block;
+                width: 713px;
+                height: 100%;
+                background: url(../../../../assets/2-3.png) center no-repeat;
+            }
+        }
+
+        & .line-2 {
+            position: absolute;
+            top: 250px;
+            left: 220px;
+            width: 715px;
+            height: 83px;
+            overflow: hidden;
+
+            > span {
+                display: block;
+                width: 715px;
+                height: 100%;
+                background: url(../../../../assets/2-2.png) center no-repeat;
+            }
+
+        }
+
+        & .buy-text {
+            position: absolute;
+            top: 140px;
+            left: 428px;
+            width: 175px;
+            height: 67px;
+            font-weight: 600;
+            color: #c52a1d;
+            font-size: 22px;
+            overflow: hidden;
+
+            > span {
+                display: block;
+                width: 175px;
+                height: 100%;
+                padding: 35px 0 0 60px;
+                background: url(../../../../assets/2-4.png) center no-repeat;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.showAni {
+    & .line-1 {
+        animation: runLine 5s ease-in-out 1.2s 1 backwards;
+    }
+
+    & .line-2 {
+        animation: runLine 5s ease-in-out 1.2s 1 backwards;
+    }
+
+    & .buy-text {
+        animation: showBuyText 2s ease-in-out 3s 1 backwards;
+    }
+
+    & .block2-con {
+        animation: conDrop 0.6s ease-in-out 0.8s 1 backwards;
+    }
+}
+
+@keyframes runLine {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 209px;
+    }
+
+    70% {
+        width: 209px;
+    }
+
+    100% {
+        width: 713px;
+    }
+}
+
+@keyframes showBuyText {
+    0% {
+        width: 0;
+    }
+
+    60% {
+        width: 175px;
+    }
+
+    100% {
+        width: 175px;
+    }
+}
